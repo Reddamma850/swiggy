@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Swiggy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            text-align: end;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 50px;
+            gap: 20px;
+            padding-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            flex-wrap: wrap;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        nav ul li {
+            margin-left: 15px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .welcome {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffe0cc;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            /* flex: 1 1 300px; */
+        }
+
+        .hero-text {
+            flex: 1 1 300px;
+            max-width: 55%;
+        }
+
+        #small {
+            padding: 6px 12px;
+            background: orange;
+            color: white;
+            display: inline-block;
+            padding: 6px 12px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .photo {
+            width: 350px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+        }
+
+        .welcome div {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .welcome img {
+            max-width: auto;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid whitesmoke;
+            flex: 1 1 200px;
+            display: flex;
+            flex-direction:column;
+            text-align: center;
+            /* margin: 10px; */
+
+        }
+
+        .items {
+            width: 100%;
+            height: 200px;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            text-align: center;
+            color: white;
+            justify-content: space-around;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image.png" alt="swiggyLogo">
+        </div>
+        <nav>
+            <ul img src="image.jpeg">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome">
+        <div class="hero-text">
+
+            <h1>Delicious Food,Delivered Fast 🍕</h1>
+            <p>Order your favorite meals and get them delivered right to your doorsteps in minutes.</p>
+            <p id="small">Order now</p>
+        </div>
+        <img src="image1.jpeg" alt="food photo" class="photo">
+    </div>
+
+    <div class="content">
+        <h2> Popular Dishes:</h2>
+    </div>
+    <main id="part2">
+        <div class="cards">
+
+            <div class="card">
+
+                <img class="items" src="image2.jpeg">
+                <h3>Meals</h3>
+                <p>200</p>
+            </div>
+
+            <div class="card">
+                <img class="items" src="image3.jpeg">
+                <h3>Burger</h3>
+                <p>99</p>
+            </div>
+
+            <div class="card">
+                <img class="items" src="image4.jpeg">
+                <h3>Donut</h3>
+                <p>100</p>
+            </div>
+
+            <div class="card">
+                <img class="items" src="image5.jpeg">
+                <h3>Chicken</h3>
+                <p>250</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h4>About Us</h4>
+            <p>We deliver delicious food at doorsteps in a minute!</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email-swiggy111@gmail.com</p>
+            <p>Phone:+91 7899146582</p>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <p>insta-swiggy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
